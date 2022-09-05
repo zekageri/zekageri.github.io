@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HsH Projects</title>
+
+    <link rel="stylesheet" href="/styles/hsButton.min.css">
+    <link rel="stylesheet" href="/styles/hsModal.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <script src="/scripts/hsButton.min.js" defer></script>
+    <script src="/scripts/hsModal.min.js" defer></script>
+</head>
+<body>
+    <h1>My projects</h1>
+
+    <hs-modal class="hs-Modal-Outer" id="testModal2">
+        <div class="hs-Modal-Inner">
+            <div class="hs-Modal-Header">
+                <span class="hs-Modal-Title"> A test modal with form </span>
+                <div class="hs-Modal-Button-Container">
+                    <button class="hs-Modal-Btn save">Save</button>
+                    <button class="hs-Modal-Btn close">X</button>
+                </div>
+            </div>
+            <div class="hs-Modal-body">
+                <form>
+                    <input placeholder="testName" type="text" name="username" id="">
+                    <input placeholder="testPw" type="password" name="password" id="">
+                    <input type="checkbox" name="geoData" id="" checked>
+                </form>
+            </div>
+        </div>
+    </hs-modal>
+
+    <hs-modal class="hs-Modal-Outer" id="testModal">
+        <div class="hs-Modal-Inner">
+            <div class="hs-Modal-Header">
+                <span class="hs-Modal-Title"> A test modal </span>
+                <div class="hs-Modal-Button-Container">
+                    <button class="hs-Modal-Btn close">X</button>
+                </div>
+            </div>
+            <div class="hs-Modal-body">
+
+                <!-- test inside the body -->
+
+            </div>
+        </div>
+    </hs-modal>
+
+    <div class="test-section">
+        <button class="hs-Modal-Btn open" target="#testModal">Open Modal</button>
+        <button class="hs-Modal-Btn open" target="#testModal2">Open Modal with form</button>
+    </div>
+
+    <div class="test-section">
+        <hs-button id="hsBtnTest">Hs Button</hs-button>
+        <hs-button class="success" id="hsBtnTest1">Hs Button</hs-button>
+        <hs-button class="info" id="hsBtnTest2">Hs Button</hs-button>
+        <hs-button class="warning" id="hsBtnTest3">Hs Button</hs-button>
+        <hs-button class="error" id="hsBtnTest4">Hs Button</hs-button>
+    </div>
+
+</body>
+</html>
